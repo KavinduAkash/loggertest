@@ -13,7 +13,7 @@ import lombok.extern.log4j.Log4j2;
 @RequestMapping("v1/test")
 public class TestController {
 
-    @GetMapping
+    @GetMapping(value = "/get")
     public ResponseDTO testMethod() {
         log.info("testMethod INFO Called");
         log.error("testMethod ERROR Called");
